@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego del Ahorcado</title>
+    <link
+      href="./src/assets/style/styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Juego del Ahorcado</h1>
+    </header>
+
+    <main>
+      <article>
+        <canvas class="canvas" id="stickman" width="250" height="250"
+          >El navegador no soporta canvas</canvas>
+      </article>
+
+      <article class="life-counter" id="lifeCounter"></article>
+
+      <article class="show-word" id="showWord"></article>
+
+      <article class="alphabet" id="alphabet">
+        <section class="character" id="character"></section>
+      </article>
+    </main>
+
+    <footer>
+      <small>&copy;Andres Segura Saez</small>
+    </footer>
+
+    <script src="./src/view/hangman.view.js"></script>
+    <script src="./src/view/game.view.js"></script>
+    <script src="./src/service/game.service.js"></script>
+    <script src="./src/controller/game.controller.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

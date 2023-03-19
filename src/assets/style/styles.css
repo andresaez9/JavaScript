@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin-bottom: 40px;
+}
+
+main{
+    align-items: center;
+    display: grid;
+    grid-template-areas: "draw"
+                         "counter"
+                         "word"
+                         "alphabet";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.canvas {
+    grid-area: draw;
+}
+
+.life-counter {
+    font-size: xx-large;
+    grid-area: counter;
+    margin-top: 2em;
+}
+
+.show-word {
+    font-size: xx-large;
+    grid-area: word;
+}
+
+.alphabet {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: alphabet;
+    justify-content: center;
+    text-align: center;
+}
+
+.character button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    margin: 6px;
+    width: 30px;
+}
+
+.result {
+    font-size: x-large;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.hidden {
+    display: none;
+}
