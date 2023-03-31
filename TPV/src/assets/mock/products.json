@@ -1,0 +1,105 @@
+[
+  {
+    "drinks": [
+      {
+        "id": 1,
+        "name": "Coca-Cola",
+        "price": 1.5,
+        "iva": 1.25,
+        "sugar": false,
+        "size": "small",
+        "photo": "https://www.diariodesevilla.es/2022/03/08/sociedad/Coca-Cola_1663344915_153413574_1200x675.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Fanta",
+        "price": 1.5,
+        "iva": 1.25,
+        "sugar": false,
+        "size": "small",
+        "photo": "https://historia.nationalgeographic.com.es/medio/2021/04/16/istock-537889399_1219d1a3_1200x630.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Aquarius",
+        "price": 1.5,
+        "iva": 1.25,
+        "sugar": false,
+        "size": "small",
+        "photo": "https://www.cafes-storme.be/Uploads/Produits/Boissons-rafraichissantes/aq-lemon-33cl-can.jpg?maxwidth=1200&maxheight=850&quality=90&mode=pad&scale=both"
+      },
+      {
+        "id": 4,
+        "name": "Agua",
+        "price": 1,
+        "iva": 1.25,
+        "sugar": false,
+        "size": "small",
+        "photo": "https://m.media-amazon.com/images/I/31wWqt3gi7L._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg"
+      }
+    ],
+
+    "burgers": [
+      {
+        "id": 5,
+        "size": "small",
+        "name": "Classic",
+        "photo": "https://static1.elcomercio.es/www/multimedia/202202/12/media/cortadas/mejor-hamburguesa-asturias-k8VH-U160918182787dOC-1248x770@El%20Comercio.jpg",
+        "price": 8.7,
+        "iva": 2,
+        "ingredients": [
+          {
+            "name": "Cheese",
+            "gluten": false,
+            "vegetarian": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "size": "small",
+        "name": "Crispy Bacon",
+        "photo": "https://images-gmi-pmc.edge-generalmills.com/35268f51-42c0-40ec-9ce2-5ec8f689ebad.jpg",
+        "price": 9.0,
+        "iva": 2,
+        "ingredients": [
+          {
+            "name": "Double Cheese",
+            "gluten": false,
+            "vegetarian": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "size": "small",
+        "name": "Big Tower",
+        "photo": "https://blog.visitacostadelsol.com/hs-fs/hubfs/CDS%20-%20blogpost%20180%20g.jpg?width=730&name=CDS%20-%20blogpost%20180%20g.jpg",
+        "price": 10.2,
+        "iva": 2,
+        "ingredients": [
+          {
+            "name": "Double Bacon",
+            "gluten": false,
+            "vegetarian": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "size": "small",
+        "name": "Crazy Goat",
+        "photo": "https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/SPAIN/calcmenu/recipes/ES-recipes/general/hamburguesa-de-ternera-con-aguacate/main-header.jpg",
+        "price": 11.2,
+        "iva": 2,
+        "ingredients": [
+          {
+            "name": "Queso Cabra, Cebolla Roja, Rúcula",
+            "gluten": false,
+            "vegetarian": false
+          }
+        ]
+      }
+    ]
+  }
+]
