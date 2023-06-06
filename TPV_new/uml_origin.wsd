@@ -1,0 +1,75 @@
+@startuml TPV
+title TPV
+
+package Domain {
+    Abstract class Product {
+        - id: string
+        - name: string
+        - iva: number
+        - image: string
+
+        + get id(): string
+        + get name(): string
+        + get iva(): number
+        + get image(): string
+        + set id(id: string): void
+        + set name(name: string): void
+        + set iva(iva: string): void
+        + set image(image: string): void
+    }
+
+    class Burger {
+        - ingredients: []
+        - vegetarian: boolean
+        - gluten: boolean
+
+        + get ingredients(): []
+        + get vegetarian(): boolean
+        + get gluten(): boolean
+        + set ingredients(ingredient: string): void
+        + set vegetarian(isVegetarian: boolean): void
+        + set gluten(hasGluten: boolean): void
+    }
+
+    class Drink {
+        - sugar: boolean
+
+        + get sugar(): boolean
+        + set sugar(hasSugar: boolean): void
+    }
+
+    class TpvService {
+        - products: Map<UUID, Product>
+        - totalPrice: number
+
+        + add(product: Product): Product
+        + remove(uuid: UUID): void
+        + get products(): []
+        + get totalPrice(): number
+        + calculatePriceVAT(): number
+        + calculateTotalPrice(): number
+    }
+
+    TpvService o-- Product
+    Product <|-- Burger
+    Product <|-- Drink
+}
+
+package Infra {
+    class TpvController {
+        - tpvService: TpvService
+        - tpvView: TpvView
+
+        + constructor(tpvService: TpvService, tpvView: TpvView)
+        + handler()
+    }
+
+    class TpvView{
+        - elements: Elements
+    }
+
+    TpvService --o TpvController
+    TpvView --o TpvController
+}
+
+@enduml

@@ -1,0 +1,20 @@
+{
+  "name": "tpv",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ./src",
+    "api": "json-server --watch ./src/assets/mock/db.json",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3",
+    "uuid": "^9.0.0"
+  }
+}

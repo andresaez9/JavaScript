@@ -1,0 +1,75 @@
+{
+    "products": {
+        "burgers": [
+            {
+                "id": 1,
+                "name": "Hamburguesa Clásica",
+                "price": 6.99,
+                "vat": 1.21,
+                "ingredients": [
+                    {
+                        "name": "hamburguesa de buey, tomate, lechuga"
+                    }
+                ],
+                "vegetarian": true,
+                "gluten": true,
+                "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/FBB73F91-2A4F-475E-BB25-CE12D72C9D19/Derivates/d1eddcbc-5604-4592-bb85-1ef70ee15f96.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Hamburguesa con Queso Azul",
+                "price": 7.99,
+                "vat": 1.21,
+                "ingredients": [
+                    {
+                        "name": "hamburguesa de vaca, queso, lechuga"
+                    }
+                ],
+                "vegetarian": false,
+                "gluten": true,
+                "image": "https://placeralplato.com/files/2016/06/Hamburguesas.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Hamburguesa Vegetariana",
+                "price": 8.99,
+                "vat": 1.21,
+                "ingredients": [
+                    {
+                        "name": "hamburguesa de vegano, tomate, lechuga, aguacate"
+                    }
+                ],
+                "vegetarian": true,
+                "gluten": false,
+                "image": "https://i.blogs.es/01a71a/hamburguesa-vegetariana-boniato/650_1200.jpg"
+            }
+        ],
+
+        "drinks": [
+            {
+              "id": 4,
+              "name": "Coca-Cola",
+              "price": 1.99,
+              "vat": 1.21,
+              "sugar": true,
+              "image": "https://www.cocacola.es/content/dam/one/es/es2/coca-cola/products/productos/dic-2021/CC_Origal.jpg"
+            },
+            {
+              "id": 5,
+              "name": "Agua mineral",
+              "price": 0.99,
+              "vat": 1.21,
+              "sugar": true,
+              "image": "https://www.tiendaecologicamadrid.es/729-large_default/agua-mineral-botella-05-l-bezoya.jpg"
+            },
+            {
+              "id": 6,
+              "name": "Jugo de naranja",
+              "price": 2.49,
+              "vat": 1.21,
+              "sugar": true,
+              "image": "https://images.ecestaticos.com/4pf3S6T-4p3m68lVpNi1FNSsRY0=/0x0:1699x1130/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe8d%2Fa2d%2Ff42%2Fe8da2df4282557bd4975dbf7feb13143.jpg"
+            }
+        ]
+    }
+}

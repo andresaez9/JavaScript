@@ -1,0 +1,105 @@
+@startuml TPV
+title TPV
+
+package TPV {
+    package Core {
+        package Models {
+            Abstract class Product {
+                - id: string
+                - name: string
+                - price: number
+                - iva: number
+                - image: string
+
+                + get id(): string
+                + get name(): string
+                + get price(): number
+                + get iva(): number
+                + get image(): string
+                + set id(id: string): void
+                + set name(name: string): void
+                + set price(price: number): void
+                + set iva(iva: string): void
+                + set image(image: string): void
+            }
+
+            class Burger {
+                - ingredients: []
+                - vegetarian: boolean
+                - gluten: boolean
+
+                + get ingredients(): []
+                + get vegetarian(): boolean
+                + get gluten(): boolean
+                + set ingredients(ingredient: string): void
+                + set vegetarian(isVegetarian: boolean): void
+                + set gluten(hasGluten: boolean): void
+            }
+
+            class Drink {
+                - sugar: boolean
+
+                + get sugar(): boolean
+                + set sugar(hasSugar: boolean): void
+            }
+        }
+
+        package Interfaces {
+            interface Elements {
+                + cardsContainer: HTMLElement
+            }
+        }
+
+        package Components {
+            
+        }
+
+        Product <|-- Burger
+        Product <|-- Drink
+    }
+
+    package Services {
+
+        class TpvService {
+            - products: Map<UUID, Product>
+            - totalPrice: number
+
+            + addBurger(burguer: Burger): void
+            + addDrink(drink: Drink): void
+            + remove(uuid: UUID): void
+            + removeAll(): void
+            + get products(): []
+            + get totalPrice(): number
+            + calculatePrices(): void
+            - calculatePriceVAT(): number
+            - calculateTotalPrice(): number
+        }
+        
+    }
+
+    package Controllers {
+        class TpvController {
+            - tpvService: TpvService
+            - tpvView: TpvView
+
+            + constructor(tpvService: TpvService, tpvView: TpvView)
+            + handler()
+        }
+        
+    }
+
+    package Views {
+        class TpvView{
+            - elements: Elements
+
+            + bind(callback)
+        }
+    }
+
+    Elements ---* TpvView
+    Product ---o TpvService
+    TpvService ---o TpvController
+    TpvView ---o TpvController
+}
+
+@enduml
