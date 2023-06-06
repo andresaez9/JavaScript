@@ -1,0 +1,96 @@
+@startuml Diary
+title Diary
+
+package Diary{
+    package Core {
+        package Models {
+            class Contact {
+                - id: string
+                - name: string
+                - surname: string
+                - email: string
+                - birthDate: Date
+                - age: number
+                - phone: number
+                - image: string
+
+                + get Id(): string
+                + get name(): string
+                + get surname(): string
+                + get email(): string
+                + get birthDate(): Date
+                + get age(): number
+                + get phone(): number
+                + get image(): string
+            }
+        }
+
+        package Interfaces {
+            interface Buttons {
+                + btnAdd: HTMLSpanElement
+                + btnUpdate: HTMLSpanElement
+            }
+
+            interface InputsForms {
+                + name: HTMLInputElement
+                + surname: HTMLInputElement
+                + email: HTMLInputElement
+                + birthDate: HTMLInputElement
+                + age: HTMLInputElement
+                + phone: HTMLInputElement
+                + image: HTMLInputElement
+            }
+        }        
+    }
+
+    package Controllers{
+        class DiaryController {
+            - diaryService: DiaryService
+            - diaryView: DiaryView
+
+            - init(): void
+            - handler()
+        }
+    }
+
+    package Services {
+        class DiaryService {
+            - contacts: Map<UUID, Contact>
+            - httpService: HttpService
+
+            + async loadContacts(): Promise<void>
+            - mappingContacts(contacts: Array<any>)
+            + insert(contact: Contact): Contact
+            + delete(contact: Contact): void
+            + update(contact: Contact): Contact
+            + get contacts(): Array<Contacts>
+        }
+
+        class HttpService {
+            + get<T>()
+            + post<T>()
+            + put<T>()
+            + delete<T>()
+        }
+    }
+
+    package Views {
+        class DiaryView {
+            - elementsDOM: HTMLElement
+            - buttons: Buttons
+
+            + renderContacts()
+            + bindAdd()
+            + bindDelete()
+            + bindUpdate()
+        }
+    }
+
+    InputsForms ..> DiaryView
+    Buttons ..> DiaryView
+    HttpService --o DiaryService
+    DiaryService o-- Contact
+    DiaryController --> DiaryService
+    DiaryController --> DiaryView
+}
+@enduml

@@ -1,0 +1,67 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Juan",
+      "surname": "Venado",
+      "email": "juanV@email.com",
+      "birthDate": "14/05/1998",
+      "phone": "+34 612347899",
+      "image": "https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Marta",
+      "surname": "San Juan",
+      "email": "martSJ@email.com",
+      "birthDate": "02/03/1995",
+      "phone": "+34 666777888",
+      "image": "https://img.freepik.com/premium-vector/businesswoman-avatar-character_24877-18290.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Miguel",
+      "surname": "Belmond",
+      "email": "mBelmond@email.com",
+      "birthDate": "20/06/2000",
+      "phone": "+34 612345678",
+      "image": "https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Sergio",
+      "surname": "Garcia",
+      "email": "garcia92@email.com",
+      "birthDate": "05/11/1992",
+      "phone": "+34 611222333",
+      "image": "https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Almudena",
+      "surname": "Serrano",
+      "email": "almuss2@email.com",
+      "birthDate": "09/12/1999",
+      "phone": "+34 699096056",
+      "image": "https://img.freepik.com/premium-vector/businesswoman-avatar-character_24877-18290.jpg"
+    },
+    {
+      "id": "7b3ed7ce-0331-47aa-9c7a-df48e736059d",
+      "name": "Bad",
+      "surname": "Bunny",
+      "email": "benito@email.com",
+      "birthDate": "2009-06-19",
+      "phone": "+34 611222333",
+      "image": "https://img2.freepng.es/20180501/aiq/kisspng-computer-icons-mobile-phones-contact-free-clip-a-5ae89e0e46df20.5997647115251942542903.jpg"
+    },
+    {
+      "id": "22dc1bd5-0ce6-44e9-9638-d31a7a5dca4f",
+      "name": "andres",
+      "surname": "los dioses illuminatti",
+      "email": "andres@email.com",
+      "birthDate": "2023-05-31",
+      "phone": "61234567",
+      "image": "https://img2.freepng.es/20180501/aiq/kisspng-computer-icons-mobile-phones-contact-free-clip-a-5ae89e0e46df20.5997647115251942542903.jpg"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../../node_modules/sweetalert2/dist/sweetalert2.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4em 1fr 10em;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    height: 100vh;
+    background-color: #2A9D8F;
+    
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-template {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.contact {
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 10px;
+    width: 40em;
+    height: 9em;
+}
+
+  .product-image img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .product-info h1 {
+    font-size: xx-large;
+  }
+  
+  .product-info p {
+    margin-top: 0.3em;
+    font-size: 18px;
+  }
+  
+  .btn-delete, .btn-update {
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .btn-delete i {
+    color: #ff0000;
+  }
+  
+  .btn-update i {
+    color: #007bff;
+  }
+  
+
+.form-template {
+  width: 50em;
+  background-color: #D8F3DC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-template h2 {
+  font-size: xxx-large;
+}
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  font-size:xx-large;
+  justify-content: center;
+  gap: 0.3em;
+  width: 80%;
+  height: 100%;
+}
+
+/* Estilos para las etiquetas */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: x-large;
+}
+
+/* Estilos para el botón */
+.btn-send {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.button-update {
+  cursor: not-allowed;
+}
+
+.btn-send:hover {
+  background-color: #218838;
+}
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
